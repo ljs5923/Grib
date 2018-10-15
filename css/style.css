@@ -1,0 +1,42 @@
+/* reset */
+html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,a,abbr,address,img,ol,ul,li,fieldset,form,label,legend,tbody,tfoot,thead,tr,th,td,dl,dt,dd,article,aside,canvas,figure,figcaption,footer,header,hgroup,menu,nav,section,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
+html,body{width:100%;height:100%}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+a{display:block;text-decoration:none;color:#555;cursor:pointer}
+body{line-height:1.5}
+ol,ul{list-style:none}
+table{width:100%;text-align:left;border-collapse:collapse;border-spacing:0}
+caption{overflow:hidden;width:1px;height:1px;margin-top:-1px;line-height:1px;font-size:20px}
+input,button,label{margin:0;padding:0;border:none;background:none;cursor:pointer}
+img{display:block;border:0}
+em{font-style:normal}
+/* common */
+._rel{width: 100%}
+._clearfix:active{content: '';display: block;clear: both}
+/* wrap */
+#_wrap{width: 100%;height: 100%;background-color: #ccc}
+/* skip_menu */
+#_skip_menu_wrap{overflow: hidden;width: 100%;height: 0;text-align: center}
+#_skip_menu_wrap a{float: left;font-weight: bold;color: #fff;line-height: 30px;font-size: 16px;font-weight: bold}
+#_skip_menu_wrap a:focus,#_skip_menu_wrap a:hover,#_skip_menu_wrap a:active{overflow: visible;position: absolute;top: 0;left: 0;width: 100%;height: 30px;background-color: #000;z-index: 9999}
+/* header */
+#_header ._logo{position: fixed;top: 33px;left: 33px;width: 90px;height: 90px}
+#_header ._gnb_btn_wrap{position: fixed;top: 51px;right: 33px;width: 60px;height: 60px;border: 1px solid #fff;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;z-index: 9999}
+#_header ._gnb_btn_wrap ._gnb_btn{display: block;position: relative;width: 100%;height: 100%}
+#_header ._gnb_btn_wrap ._gnb_btn ._gnb_line{position: absolute;left: 15px;width: 28px;height: 3px;background-color: #fff;-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;-moz-transition: all 0.3s ease;transition:all 0.3s ease}
+#_header ._gnb_btn_wrap ._gnb_btn ._gnb_line._top{top: 18px}
+#_header ._gnb_btn_wrap ._gnb_btn ._gnb_line._mid{top: 50%;margin-top: -1.5px}
+#_header ._gnb_btn_wrap ._gnb_btn ._gnb_line._bot{bottom: 18px}
+#_header ._gnb_btn_wrap ._gnb_btn._on ._gnb_line._top{-webkit-transform: translateY(9.5px) rotate(45deg);-ms-transform: translateY(9.5px) rotate(45deg);-o-transform: translateY(9.5px) rotate(45deg);-moz-transform: translateY(9.5px) rotate(45deg);transform: translateY(9.5px) rotate(45deg)}
+#_header ._gnb_btn_wrap ._gnb_btn._on ._gnb_line._mid{display: none}
+#_header ._gnb_btn_wrap ._gnb_btn._on ._gnb_line._bot{-webkit-transform: translateY(-9.5px) rotate(-45deg);-ms-transform: translateY(-9.5px) rotate(-45deg);-o-transform: translateY(-9.5px) rotate(-45deg);-moz-transform: translateY(-9.5px) rotate(-45deg);transform: translateY(-9.5px) rotate(-45deg)}
+#_header ._gnb_wrap{position: fixed;top: 0;right: 0;width: 300px;height: 100%;margin-right: -300px;background-color: rgba(0,0,0,0.6);-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;-moz-transition: all 0.3s ease;transition:all 0.3s ease}
+#_header ._gnb_wrap._on{margin-right: 0;-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;-moz-transition: all 0.3s ease;transition:all 0.3s ease}
+#_header ._gnb_wrap ._gnb_box{position: absolute;top: 50%;padding-left: 50px;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);-o-transform: translateY(-50%);-moz-transform: translateY(-50%);transform: translateY(-50%)}
+#_header ._gnb_wrap ._gnb_box ._gnb ._gnb_lst:first-child{margin-top: 0}
+#_header ._gnb_wrap ._gnb_box ._gnb ._gnb_lst{margin-top: 30px}
+#_header ._gnb_wrap ._gnb_box ._gnb ._gnb_lst > a{font-size: 24px;font-weight: bold;color: #000}
+#_header ._gnb_wrap ._gnb_box ._gnb ._gnb_lst:hover > a{color: #fff}
+#_header ._gnb_wrap ._gnb_box ._gnb ._gnb_lst ._gnb_sub{display: none;margin-top: 10px}
+#_header ._gnb_wrap ._gnb_box ._gnb ._gnb_lst ._gnb_sub li{height: 30px;margin: 10px 0;padding-left: 15px;line-height: 30px}
+#_header ._gnb_wrap ._gnb_box ._gnb ._gnb_lst ._gnb_sub li a{font-size: 16px;color: #ccc}
