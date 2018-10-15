@@ -1,6 +1,6 @@
 /* reset */
 html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,a,abbr,address,img,ol,ul,li,fieldset,form,label,legend,tbody,tfoot,thead,tr,th,td,dl,dt,dd,article,aside,canvas,figure,figcaption,footer,header,hgroup,menu,nav,section,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
-html,body{width:100%;height:100%}
+html,body{width:100%;height:100%;font-family:'Nanum Square'}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 a{display:block;text-decoration:none;color:#555;cursor:pointer}
 body{line-height:1.5}
@@ -40,3 +40,13 @@ em{font-style:normal}
 #_header ._gnb_wrap ._gnb_box ._gnb ._gnb_lst ._gnb_sub{display: none;margin-top: 10px}
 #_header ._gnb_wrap ._gnb_box ._gnb ._gnb_lst ._gnb_sub li{height: 30px;margin: 10px 0;padding-left: 15px;line-height: 30px}
 #_header ._gnb_wrap ._gnb_box ._gnb ._gnb_lst ._gnb_sub li a{font-size: 16px;color: #ccc}
+/* contentMenu */
+#_wrap ._content_menu_wrap{position: fixed;top: 50%;left: 0;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);-o-transform: translateY(-50%);-moz-transform: translateY(-50%);transform: translateY(-50%)}
+#_wrap ._content_menu_wrap ._content_menu ._content_menu_lst:first-child{margin-top: 0}
+#_wrap ._content_menu_wrap ._content_menu ._content_menu_lst{margin-top: 30px}
+#_wrap ._content_menu_wrap ._content_menu ._content_menu_lst a{position: relative;padding-left: 40px;vertical-align: top;line-height: 40px;font-size: 30px;letter-spacing: 3px;color: rgba(0,0,0,0.2);-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;-moz-transition: all 0.3s ease;transition:all 0.3s ease}
+#_wrap ._content_menu_wrap ._content_menu ._content_menu_lst a:before{content: '';position: absolute;top: 18.5px;left: 0;width: 37px;height: 3px;background-color: #fff;opacity: 0}
+#_wrap ._content_menu_wrap ._content_menu ._content_menu_lst a span{opacity: 0;-webkit-transition: opacity 0.3s ease;-o-transition: opacity 0.3s ease;-moz-transition: opacity 0.3s ease;transition:opacity 0.3s ease}
+#_wrap ._content_menu_wrap:hover ._content_menu ._content_menu_lst a span{opacity: 1}
+#_wrap ._content_menu_wrap ._content_menu ._content_menu_lst.active a{font-weight: bold;color: #fff}
+#_wrap ._content_menu_wrap ._content_menu ._content_menu_lst.active a:before{opacity: 1}
