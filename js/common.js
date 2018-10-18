@@ -1,8 +1,10 @@
 jQuery(function ($) {
     var $_gnbBtn = $('._gnb_btn');
     var $_gnbWrap = $('._gnb_wrap');
-    var $_contentMenu = $('._content_menu_lst');
-    $_gnbBtn.on('click',function(){
+    var $_contentMenu = $('._content_menu');
+    var $_contentMenuLst = $('._content_menu_lst');
+    //menu event start
+    $_gnbBtn.on('click', function () {
         $(this).toggleClass('_on');
         $_gnbWrap.toggleClass('_on');
     });
@@ -15,12 +17,21 @@ jQuery(function ($) {
             $(this).find('._gnb_sub').stop().slideUp(500);
         }
     );
-    $_contentMenu.hover(
-        function(){
-            $(this).addClass('active');
+    //menu envet end
+    //local menu event start
+    $_contentMenuLst.hover(
+        function () {
+            $(this).addClass('active')
         },
-        function(){
+        function () {
             $(this).removeClass('active');
+            $('#fullpage .section').each(function () {
+                if ($(this).hasClass('active') == true) {
+                    var index = $(this).index();
+                    $_contentMenu.eq(index).addClass('active').siblings().removeClass('active');
+                }
+            })
         }
     );
+    //local menu evnet end
 })
