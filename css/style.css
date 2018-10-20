@@ -84,7 +84,7 @@ em{font-style:normal}
 #_container #_section04{background-image: url(../imgs/index/bg_sec4.jpg)}
 #_container #_section05{background-image: url(../imgs/index/bg_sec5.jpg)}
 /* footer */
-#_footer{background-color: #333;height: 220px}
+#_footer.section{background-color: #333;height: 220px;overflow: inherit}
 #_footer ._footer_top_wrap{background-color: #494a4d}
 #_footer ._footer_top_wrap ._footer_top{position: relative;width: 845px;margin: 0 auto;padding-right: 255px}
 #_footer ._footer_top_wrap ._footer_top ._move_site_lst{position: relative;float: left;width: 25%;text-align: center}
@@ -103,4 +103,9 @@ em{font-style:normal}
 @media only screen and (max-width:1199px) {
     #_wrap ._content_menu_wrap{display: none}
     #_container .section ._tit_box{width: 85%;padding-left: 0}
+    #_footer ._footer_top_wrap ._footer_top{width: 80%;padding-right: 20%}
+    #_footer ._footer_top_wrap ._footer_top ._btn_grib{right: 10px}
+    #_footer ._footer_top_wrap ._footer_top ._scroll_top_btn{right: 20px}
+    #_footer ._footer_bot_wrap ._footer_bot{width: auto}
+    #_footer ._footer_bot_wrap ._footer_bot ._kbrain_icon_wrap{right: 20px}
 }
