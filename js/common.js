@@ -30,5 +30,9 @@ jQuery(function ($) {
             }
         })
     });
+    $(window).on('scroll',function(){
+        var scrollY = window.pageYOffset;
+        console.log(scrollY);
+    })
     //local menu evnet end
 })
