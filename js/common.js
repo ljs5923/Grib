@@ -19,19 +19,16 @@ jQuery(function ($) {
     );
     //menu envet end
     //local menu event start
-    $_contentMenuLst.hover(
-        function () {
-            $(this).addClass('active')
-        },
-        function () {
-            $(this).removeClass('active');
-            $('#fullpage .section').each(function () {
-                if ($(this).hasClass('active') == true) {
-                    var index = $(this).index();
-                    $_contentMenu.eq(index).addClass('active').siblings().removeClass('active');
-                }
-            })
-        }
-    );
+    $_contentMenuLst.on('mouseenter', function () {
+        $(this).addClass('active').siblings().removeClass('active');
+    });
+    $_contentMenu.on('mouseleave', function () {
+        $('#fullpage .section').each(function () {
+            if ($(this).hasClass('active') == true) {
+                var index = $(this).index();
+                $_contentMenuLst.eq(index).addClass('active').siblings().removeClass('active');
+            }
+        })
+    });
     //local menu evnet end
 })
