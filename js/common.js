@@ -3,20 +3,16 @@ jQuery(function ($) {
     var $_gnbWrap = $('._gnb_wrap');
     var $_contentMenu = $('._content_menu');
     var $_contentMenuLst = $('._content_menu_lst');
+    var $_gnbLst = $('._gnb_lst');
     //menu event start
     $_gnbBtn.on('click', function () {
         $(this).toggleClass('_on');
         $_gnbWrap.toggleClass('_on');
     });
-    var $_gnbLst = $('._gnb_lst');
-    $_gnbLst.hover(
-        function () {
-            $(this).find('._gnb_sub').stop().slideDown(500);
-        },
-        function () {
-            $(this).find('._gnb_sub').stop().slideUp(500);
-        }
-    );
+    $_gnbLst.on('click',function(){
+        $(this).find('._gnb_sub').stop().slideToggle(500);
+        $(this).siblings().find('._gnb_sub').stop().slideUp(500);
+    })
     //menu envet end
     //local menu event start
     $_contentMenuLst.on('mouseenter', function () {
