@@ -1,6 +1,6 @@
 /* reset */
 html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,a,abbr,address,img,ol,ul,li,fieldset,form,label,legend,tbody,tfoot,thead,tr,th,td,dl,dt,dd,article,aside,canvas,figure,figcaption,footer,header,hgroup,menu,nav,section,video{margin:0;padding:0;border:0;font-size:50%;font:inherit;vertical-align:baseline}
-html,body{width:100%;height:100%;letter-spacing: -1px;font-family:'Nanum Square',sans-serif}
+html,body{width:100%;height:100%;letter-spacing: -1px;font-family:'Nanum Square',sans-serif;word-break: keep-all;word-wrap: break-word}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 a{display:block;text-decoration:none;color:#555;cursor:pointer}
 body{line-height:1.5}
@@ -142,7 +142,7 @@ img{max-width: 100%}
 #_container ._content_wrap ._patent_lsts_wrap ._patent_lst{float: left;position: relative;width: 30%;margin: 0 10%}
 #_container ._content_wrap ._patent_lsts_wrap ._patent_lst ._patent_img{width: 100%}
 #_container ._content_wrap ._patent_lsts_wrap ._patent_lst dl{width: 100%;text-align: center}
-#_container ._content_wrap ._patent_lsts_wrap ._patent_lst dl dt{margin-bottom: 18px;line-height: 24px;font-size: 22px;font-weight: bold;color: #333}
+#_container ._content_wrap ._patent_lsts_wrap ._patent_lst dl dt{margin: 18px 0;line-height: 24px;font-size: 22px;font-weight: bold;color: #333}
 #_container ._content_wrap ._patent_lsts_wrap ._patent_lst dl dd{font-size: 15px;color: #333}
 #_container ._content_wrap ._patent_lsts_wrap ._patent_lst dl dd._date{margin-top: 10px;color: #555}
 #_container ._content_wrap._content01 ._content{position: absolute;top: 50%;left: 50%;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);transform: translate(-50%,-50%)}
@@ -172,7 +172,7 @@ img{max-width: 100%}
 #_container._iot_dongle ._content_wrap ._content ._iot_hub{margin-bottom: 30px}
 #_container._iot_dongle ._content_wrap._content01{background-image: url(../imgs/iot_device/iot_hub_dongle/sub_visual1_2.jpg)}
 #_container._iot_dongle ._content_wrap._content03 ._content ._txt_focus{margin-top: 0;text-align: center}
-#_container._iot_dongle ._content_wrap._content04{background-image: url(../imgs/iot_device/iot_hub_dongle/sec_iot_dongle3.jpg)}
+#_container._iot_dongle ._content_wrap._content04{min-height: 530px;padding-bottom: 0;background-image: url(../imgs/iot_device/iot_hub_dongle/sec_iot_dongle3.jpg)}
 /* iot_gas_lock */
 #_container._iot_gas_lock ._content_wrap._content01{background-image: url(../imgs/iot_device/iot_gas_lock/sub_visual1_3.jpg)}
 #_container._iot_gas_lock ._content_wrap._content04{background-color: #f9f9f9}
@@ -219,7 +219,8 @@ img{max-width: 100%}
     #_footer ._footer_bot_wrap ._footer_bot{width: auto}
     #_footer ._footer_bot_wrap ._footer_bot ._kbrain_icon_wrap{right: 20px}
 /*    iot_device    */
-    #_container ._content_wrap ._content{width: 100%;padding: 0 50px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box}
+    #_container ._content_wrap ._content{width: 100%;padding: 0 18px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box}
+    #_container ._content_wrap._content01 ._content{padding: 0 50px}
     #_container ._content_wrap ._content ._tit{margin-bottom: 50px;font-size: 40px}
     #_container ._content_wrap ._content ._tit span{font-size: 28px}
     #_container ._content_wrap ._content ._txt{font-size: 20px}
@@ -227,6 +228,9 @@ img{max-width: 100%}
     #_container ._content_wrap ._content ._iot_hub{margin-bottom: 25px}
     #_container ._content_wrap._content03 ._content ._sub_txt{font-size: 16px}
     #_container ._content_wrap._content03 ._content ._txt_focus{margin-top: 0;text-align: center}
+    #_container ._content_wrap._content04 ._content ._icon_lsts_wrap ._icon_lst{padding-top: 130px;background-size: 110px auto}
+    #_container ._content_wrap._content04 ._content ._icon_lsts_wrap ._icon_lst strong{font-size: 20px}
+    #_container ._content_wrap._content04 ._content ._icon_lsts_wrap ._icon_lst p{font-size: 14px}
     #_container ._content_wrap._content06 ._content{padding: 0}
     #_container ._content_wrap ._patent_lsts_wrap ._patent_lst dl dt{font-size: 20px;margin: 10px}
     #_container ._content_wrap ._patent_lsts_wrap ._patent_lst dl dd{font-size: 14px}
@@ -290,6 +294,7 @@ img{max-width: 100%}
     #_container ._content_wrap ._content ._tit{margin-bottom: 50px;font-size: 35px}
     #_container ._content_wrap ._content ._tit span{font-size: 22px}
     #_container ._content_wrap ._content ._txt{font-size: 15px}
+    #_container ._content_wrap ._content ._txt br{display: none}
     #_container ._content_wrap ._content ._sub_tit{margin-bottom: 15px;font-size: 25px}
     #_container ._content_wrap ._content ._sub_txt{font-size: 12px}
     #_container ._content_wrap ._content ._iot_hub ._wave_box{width: 80%;height: 80%}
@@ -300,12 +305,22 @@ img{max-width: 100%}
     #_container._iot_stand ._content_wrap._content04{min-height: 50px}
     #_container ._content_wrap._content02{min-height: 0;padding: 65px 50px 0}
     #_container ._content_wrap._content03,#_container ._content_wrap._content05,#_container ._content_wrap._content06{padding: 40px 0}
+    #_container ._content_wrap._content04 ._content ._icon_lsts_wrap ._icon_lst strong{font-size: 18px}
+    #_container ._content_wrap._content04 ._content ._icon_lsts_wrap ._icon_lst p{font-size: 12px}
     #_container ._content_wrap._content05 ._content ._sub_txt{margin-bottom: 40px}
     #_container ._content_wrap._content06 ._content ._sub_txt{margin-bottom: 35px}
     #_container ._content_wrap ._content ._connect_pord_wrap ._connect_prod_lst{width: 50%}
     #_container ._content_wrap ._content ._connect_pord_wrap ._connect_prod_lst:nth-of-type(1),#_container ._content_wrap ._content ._connect_pord_wrap ._connect_prod_lst:nth-of-type(2){border-bottom: 1px solid #ddd}
     #_container ._content_wrap ._patent_lsts_wrap ._patent_lst dl dt{font-size: 15px}
     #_container ._content_wrap ._patent_lsts_wrap ._patent_lst dl dd{font-size: 12px}
+    #_container._iot_dongle ._content_wrap._content04{min-height: 520px;padding: 40px 0}
+    #_container ._content_wrap._content04 ._content ._sub_txt{margin-bottom: 40px}
+    #_container ._content_wrap._content04 ._content ._icon_lsts_wrap ._icon_lst{width: 50%;margin-bottom: 30px;padding-top: 100px;background-size: 80px auto}
+    #_container._z_wave_repeater ._content_wrap._content03 ._content ._sub_txt{margin-bottom: 35px}
+    #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box{width: 75%;height: 75%;}
+    #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box:nth-of-type(1){top: 70%;left: 30%}
+    #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box:nth-of-type(2){top: 20%;left: 73%}
+    
 }
 @media only screen and (max-width:567px){
     #_header ._gnb_wrap ._gnb_box ._gnb ._gnb_lst ._lst_tit{font-size: 18px}
@@ -327,5 +342,6 @@ img{max-width: 100%}
     #_footer ._footer_bot_wrap ._footer_bot adress{display: block;padding: 75px 0 20px 0;text-align: center;font-size: 12px}
     #_footer ._footer_bot_wrap ._footer_bot ._kbrain_icon_wrap{top: 10px;right: 10px}
     /*    iot_device    */
-    #_container ._content_wrap ._content{padding: 0 9px}
+    #_container ._content_wrap._content01 ._content{padding: 0 50px}
+    #_container ._content_wrap ._patent_lsts_wrap ._patent_lst{width: 90%;margin: 0 5% 20px}
 }
