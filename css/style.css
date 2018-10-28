@@ -1,6 +1,6 @@
 /* reset */
 html,body,div,span,iframe,h1,h2,h3,h4,h5,h6,p,a,abbr,address,img,ol,ul,li,fieldset,form,label,legend,tbody,tfoot,thead,tr,th,td,dl,dt,dd,article,aside,canvas,figure,figcaption,footer,header,hgroup,menu,nav,section,video{margin:0;padding:0;border:0;font-size:50%;font:inherit;vertical-align:baseline}
-html,body{width:100%;height:100%;letter-spacing: -1px;font-family:'Nanum Square',sans-serif;word-break: keep-all;word-wrap: break-word}
+html,body{width:100%;height:100%;font-family:'Nanum Square',sans-serif;word-break: keep-all;word-wrap: break-word}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 a{display:block;text-decoration:none;color:#555;cursor:pointer}
 body{line-height:1.5}
@@ -32,16 +32,15 @@ img{max-width: 100%}
 #_header ._gnb_btn_wrap ._gnb_btn._on ._gnb_line._top{-webkit-transform: translateY(9.5px) rotate(45deg);-ms-transform: translateY(9.5px) rotate(45deg);-o-transform: translateY(9.5px) rotate(45deg);-moz-transform: translateY(9.5px) rotate(45deg);transform: translateY(9.5px) rotate(45deg)}
 #_header ._gnb_btn_wrap ._gnb_btn._on ._gnb_line._mid{display: none}
 #_header ._gnb_btn_wrap ._gnb_btn._on ._gnb_line._bot{-webkit-transform: translateY(-9.5px) rotate(-45deg);-ms-transform: translateY(-9.5px) rotate(-45deg);-o-transform: translateY(-9.5px) rotate(-45deg);-moz-transform: translateY(-9.5px) rotate(-45deg);transform: translateY(-9.5px) rotate(-45deg)}
-#_header ._sub_gnb_btn_wrap{display: block;overflow: hidden;position: fixed;top: 51px;right: 113px;width: 270px;height: 60px;background-color: rgba(0,0,0,0.4);-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;-moz-transition: all 0.3s ease;transition:all 0.3s ease;z-index: 9999}
-#_header ._sub_gnb_btn_wrap._fixed{top: 0;right: 60px;width: 60px;height: 60px}
+#_header ._sub_gnb_btn_wrap{display: block;overflow: hidden;position: fixed;top: 51px;right: 113px;width: 270px;height: auto;background-color: rgba(0,0,0,0.4);-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;-moz-transition: all 0.3s ease;transition:all 0.3s ease;z-index: 9999}
+#_header ._sub_gnb_btn_wrap._fixed{top: 0;right: 60px;width: 60px;height: auto}
 #_header ._sub_gnb_btn_wrap._fixed ._sub_gnb_lsts ._sub_gnb_lst a{display: none}
-#_header ._sub_gnb_btn_wrap._active{height: 240px}
-#_header ._sub_gnb_btn_wrap._fixed._active{width: 270px;height: 240px}
+#_header ._sub_gnb_btn_wrap._fixed._active{width: 270px}
 #_header ._sub_gnb_btn_wrap._fixed._active ._sub_gnb_lsts ._sub_gnb_lst a{display: block}
 #_header ._sub_gnb_btn_wrap ._sub_gnb_btn{position: absolute;top: 0;right: 0;width: 60px;height: 60px;z-index: 100}
 #_header ._sub_gnb_btn_wrap ._sub_gnb_btn:before{content: '';position: absolute;top: 50%;right: 45%;width: 16px;height: 3px;background-color: #fff;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);-o-transform: rotate(45deg);-moz-transform: rotate(45deg);transform: rotate(45deg);-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;-moz-transition: all 0.3s ease;transition:all 0.3s ease}
-#_header ._sub_gnb_btn_wrap ._sub_gnb_btn:after{content: '';position: absolute;top: 50%;left: 45%;width: 16px;height: 3px;background-color: #fff;-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);-moz-transform: rotate(-45deg);transform: rotate(-45deg);-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;-moz-transition: all 0.3s ease;transition:all 0.3s ease}
 #_header ._sub_gnb_btn_wrap._active ._sub_gnb_btn:before{content: '';position: absolute;top: 50%;right: 45%;width: 16px;height: 3px;background-color: #fff;-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);-moz-transform: rotate(-45deg);transform: rotate(-45deg);-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;-moz-transition: all 0.3s ease;transition:all 0.3s ease}
+#_header ._sub_gnb_btn_wrap ._sub_gnb_btn:after{content: '';position: absolute;top: 50%;left: 45%;width: 16px;height: 3px;background-color: #fff;-webkit-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-o-transform: rotate(-45deg);-moz-transform: rotate(-45deg);transform: rotate(-45deg);-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;-moz-transition: all 0.3s ease;transition:all 0.3s ease}
 #_header ._sub_gnb_btn_wrap._active ._sub_gnb_btn:after{content: '';position: absolute;top: 50%;left: 45%;width: 16px;height: 3px;background-color: #fff;-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg);-o-transform: rotate(45deg);-moz-transform: rotate(45deg);transform: rotate(45deg);-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;-moz-transition: all 0.3s ease;transition:all 0.3s ease}
 #_header ._sub_gnb_btn_wrap ._sub_gnb_lsts ._sub_gnb_lst{height: 0;opacity: 0;;-webkit-transition: all 0.3s ease;-o-transition: all 0.3s ease;-moz-transition: all 0.3s ease;transition:all 0.3s ease}
 #_header ._sub_gnb_btn_wrap ._sub_gnb_lsts ._sub_gnb_lst._active{height: 60px;opacity: 1}
@@ -120,14 +119,14 @@ img{max-width: 100%}
 #_footer ._footer_bot_wrap ._footer_bot adress{line-height: 30px;font-size: 16px;color: rgba(255,255,255,0.5)}
 #_footer ._footer_bot_wrap ._footer_bot adress ._number{padding-left: 40px}
 #_footer ._footer_bot_wrap ._footer_bot ._kbrain_icon_wrap{position: absolute;top: 37px;right: 0}
-/* iot_device */
+/* sub_page */
 #_container ._content_wrap{position: relative;overflow: hidden;height: 100%;background-position: 50% 0;background-size: cover}
 #_container ._content_wrap img{margin: 0 auto}
 #_container ._content_wrap ._content{width: 1040px;margin: 0 auto;padding: 0 30px}
 #_container ._content_wrap ._content ._tit{margin-bottom: 40px;font-size: 50px;font-weight: bold;color: #fff}
 #_container ._content_wrap ._content ._txt{font-size: 24px;color: #fff}
 #_container ._content_wrap ._content ._tit span{display: block;font-size: 36px;font-weight: bold}
-#_container ._content_wrap ._content ._sub_tit{margin-bottom: 25px;line-height: 42px;text-align: center;font-size: 40px;font-weight: bold;color: #333}
+#_container ._content_wrap ._content ._sub_tit{margin-bottom: 25px;text-align: center;font-size: 40px;font-weight: bold;color: #333}
 #_container ._content_wrap ._content ._sub_txt{text-align: center;font-size: 18px;color: #555}
 #_container ._content_wrap ._content ._iot_hub{position: relative}
 #_container ._content_wrap ._content ._iot_hub ._wave_box{position: absolute;top: 50%;left: 50%;width: 454px;height: 454px;-webkit-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);-o-transform: translate(-50%,-50%);-moz-transform: translate(-50%,-50%);transform: translate(-50%,-50%)}
@@ -190,6 +189,22 @@ img{max-width: 100%}
 #_container._z_wave_repeater ._content_wrap._content03 ._content ._sub_txt{margin-bottom: 130px}
 #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box:nth-of-type(1){top: 70%;left: 35%}
 #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box:nth-of-type(2){top: 30%;left: 63%}
+/* platform_g */
+#_container._platform_g ._content_wrap._content01{background-image: url(../imgs/platform_solution/platform_g/sub_visual2_1.jpg)}
+#_container._platform_g ._content_wrap._content02{padding: 70px 0;min-height: inherit;background-color: #f9f9f9}
+#_container._platform_g ._content_wrap._content02 ._content ._sub_txt{margin-bottom: 60px}
+#_container._platform_g ._content_wrap._content02 ._content ._plat_lst{display: table;float: left;width: 50%;margin-top: 40px;padding-left: 210px;text-align: left;background-repeat: no-repeat;background-position: 50px 50%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box}
+#_container._platform_g ._content_wrap._content02 ._content ._plat_lst._plat_lst1{background-image: url(../imgs/platform_solution/platform_g/ico_platform1.png)}
+#_container._platform_g ._content_wrap._content02 ._content ._plat_lst._plat_lst2{background-image: url(../imgs/platform_solution/platform_g/ico_platform2.png)}
+#_container._platform_g ._content_wrap._content02 ._content ._plat_lst._plat_lst3{background-image: url(../imgs/platform_solution/platform_g/ico_platform3.png)}
+#_container._platform_g ._content_wrap._content02 ._content ._plat_lst._plat_lst4{background-image: url(../imgs/platform_solution/platform_g/ico_platform4.png)}
+#_container._platform_g ._content_wrap._content02 ._content ._plat_lst._plat_lst5{background-image: url(../imgs/platform_solution/platform_g/ico_platform5.png)}
+#_container._platform_g ._content_wrap._content02 ._content ._plat_lst ._plat_lst_txt_box{display: table-cell;height: 130px;vertical-align: middle}
+#_container._platform_g ._content_wrap._content02 ._content ._plat_lst ._plat_lst_txt_box strong{display: block;margin-bottom: 15px;font-size: 24px;color: #333}
+#_container._platform_g ._content_wrap._content02 ._content ._plat_lst ._plat_lst_txt_box p{font-weight: bold;font-size: 16px;color: #777}
+#_container._platform_g ._content_wrap._content03{min-height: 145px;padding: 125px 0 70px;background-image: url(../imgs/platform_solution/platform_g/sec_platform2.jpg)}
+#_container._platform_g ._content_wrap._content03 ._sub_tit,#_container._platform_g ._content_wrap._content03 ._sub_txt{color: #fff}
+#_container._platform_g ._content_wrap._content03 ._sub_txt{margin-bottom: 0}
 @keyframes waveMotion{
 	0%{ transform: scale(1); }
 	100%{ transform: scale(3); opacity: 0 }
@@ -225,6 +240,7 @@ img{max-width: 100%}
     #_container ._content_wrap ._content ._tit span{font-size: 28px}
     #_container ._content_wrap ._content ._txt{font-size: 20px}
     #_container ._content_wrap ._content ._sub_tit{margin-bottom: 20px;font-size: 30px}
+    #_container ._content_wrap ._content ._sub_txt{font-size: 16px}
     #_container ._content_wrap ._content ._iot_hub{margin-bottom: 25px}
     #_container ._content_wrap._content03 ._content ._sub_txt{font-size: 16px}
     #_container ._content_wrap._content03 ._content ._txt_focus{margin-top: 0;text-align: center}
@@ -234,6 +250,9 @@ img{max-width: 100%}
     #_container ._content_wrap._content06 ._content{padding: 0}
     #_container ._content_wrap ._patent_lsts_wrap ._patent_lst dl dt{font-size: 20px;margin: 10px}
     #_container ._content_wrap ._patent_lsts_wrap ._patent_lst dl dd{font-size: 14px}
+/*    platform_solution    */
+    #_container._platform_g ._content_wrap._content02 ._content ._plat_lsts{padding-left: 18px}
+    #_container._platform_g ._content_wrap._content02 ._content ._plat_lst ._plat_lst_txt_box strong{font-size: 22px}
 }
 @media only screen and (max-width:991px) {
     #_header ._gnb_wrap ._gnb_box ._gnb ._gnb_lst ._lst_tit{font-size: 22px}
@@ -259,7 +278,10 @@ img{max-width: 100%}
     #_container ._content_wrap ._content ._connect_pord_wrap ._connect_prod_lst{padding: 0 20px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box}
     #_container ._content_wrap ._patent_lsts_wrap ._patent_lst{width: 46%;margin: 0 2%;background-color: #fff;padding-bottom: 5%}
     #_container ._content_wrap ._patent_lsts_wrap ._patent_lst ._patent_img{width: 90%;margin: 5% auto;border: 1px solid #ddd}
-    
+/*    platform_solution    */
+    #_container._platform_g ._content_wrap._content02 ._content ._plat_lst{padding-left: 130px;background-position: 0 50%;background-size: 110px auto}
+    #_container._platform_g ._content_wrap._content02 ._content ._plat_lst ._plat_lst_txt_box strong{font-size: 20px}
+    #_container._platform_g ._content_wrap._content02 ._content ._plat_lst ._plat_lst_txt_box p{font-size: 14px}
 }
 @media only screen and (max-width:767px) {
     #_wrap ._scroll_down{width: 30px;height: 45px}
@@ -297,6 +319,7 @@ img{max-width: 100%}
     #_container ._content_wrap ._content ._txt br{display: none}
     #_container ._content_wrap ._content ._sub_tit{margin-bottom: 15px;font-size: 25px}
     #_container ._content_wrap ._content ._sub_txt{font-size: 12px}
+    #_container ._content_wrap ._content ._sub_txt br{display: none}
     #_container ._content_wrap ._content ._iot_hub ._wave_box{width: 80%;height: 80%}
     #_container ._content_wrap ._content ._iot_hub ._wave_box ._wave{width: 40%;height: 40%;margin: -20% 0 0 -20%}
     #_container ._content_wrap ._iot_hub_pord img{width: 70%}
@@ -320,7 +343,15 @@ img{max-width: 100%}
     #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box{width: 75%;height: 75%;}
     #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box:nth-of-type(1){top: 70%;left: 30%}
     #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box:nth-of-type(2){top: 20%;left: 73%}
-    
+/*    platform_solution    */
+    #_container._platform_g ._content_wrap._content02 ._content ._sub_txt{margin-bottom: 35px}
+    #_container._platform_g ._content_wrap._content02 ._content ._plat_lst{float: none;width: 300px;margin: 0 auto;margin-top: 20px;padding-left: 100px;background-size: 80px auto}
+    #_container._platform_g ._content_wrap._content02 ._content ._plat_lst ._plat_lst_txt_box{height: 100px}
+    #_container._platform_g ._content_wrap._content02 ._content ._plat_lst ._plat_lst_txt_box strong{font-size: 15px}
+    #_container._platform_g ._content_wrap._content02 ._content ._plat_lst ._plat_lst_txt_box p{font-size: 12px}
+    #_container._platform_g ._content_wrap._content03{min-height: 250px;padding: 0}
+    #_container._platform_g ._content_wrap._content03 ._content{position: absolute;top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);-o-transform: translateY(-50%);-moz-transform: translateY(-50%);transform: translateY(-50%)}
+    #_container._platform_g ._content_wrap._content03 ._content ._sub_txt{margin-bottom: 0}
 }
 @media only screen and (max-width:567px){
     #_header ._gnb_wrap ._gnb_box ._gnb ._gnb_lst ._lst_tit{font-size: 18px}
@@ -344,4 +375,6 @@ img{max-width: 100%}
     /*    iot_device    */
     #_container ._content_wrap._content01 ._content{padding: 0 50px}
     #_container ._content_wrap ._patent_lsts_wrap ._patent_lst{width: 90%;margin: 0 5% 20px}
+/*    platform_solution    */
+    #_container._platform_g ._content_wrap._content02 ._content ._plat_lst{width: auto;margin: 20px 0 0}
 }
