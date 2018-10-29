@@ -189,6 +189,8 @@ img{max-width: 100%}
 #_container._z_wave_repeater ._content_wrap._content03 ._content ._sub_txt{margin-bottom: 130px}
 #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box:nth-of-type(1){top: 70%;left: 35%}
 #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box:nth-of-type(2){top: 30%;left: 63%}
+#_container._z_wave_repeater ._content_wrap ._content ._iot_hub ._wave_box ._wave._wave2{-webkit-animation: waveMotion2 2.4s linear 0s infinite;-moz-animation: waveMotion2 2.4s linear 0s infinite;animation: waveMotion2 2.4s linear 0s infinite}
+#_container._z_wave_repeater ._content_wrap ._content ._iot_hub ._wave_box ._wave._wave3{-webkit-animation: waveMotion2 2.4s linear 1.2s infinite;-moz-animation: waveMotion2 2.4s linear 1.2s infinite;animation: waveMotion2 2.4s linear 1.2s infinite}
 /* platform_g */
 #_container._platform_g ._content_wrap._content01{background-image: url(../imgs/platform_solution/platform_g/sub_visual2_1.jpg)}
 #_container._platform_g ._content_wrap._content02{padding: 70px 0;min-height: inherit;background-color: #f9f9f9}
@@ -207,7 +209,7 @@ img{max-width: 100%}
 #_container._platform_g ._content_wrap._content03 ._sub_txt{margin-bottom: 0}
 /* cloud_streaming */
 #_container._cloud_streaming ._content_wrap{padding: 70px 0}
-#_container._cloud_streaming ._content_wrap ._content{width: 1100px;padding: 0}
+#_container._cloud_streaming ._content_wrap ._content,#_container._service ._content_wrap ._content{width: 1100px;padding: 0}
 #_container._cloud_streaming ._content_wrap ._content ._sub_txt{margin-bottom: 70px}
 #_container._cloud_streaming ._content_wrap._content01{padding: 0;background-image: url(../imgs/platform_solution/cluod_streaming/sub_visual2_2.jpg)}
 #_container._cloud_streaming ._content_wrap ._con_box{float: left}
@@ -218,6 +220,23 @@ img{max-width: 100%}
 #_container._cloud_streaming ._content_wrap ._con_img_box ._con_img_lst2{position: absolute;top: 0;left: 50%;margin-left: -50px}
 #_container._cloud_streaming ._content_wrap ._con_img_box ._con_img_lst3{position: absolute;bottom: 0;left: 50%;margin-left: -50px}
 #_container._cloud_streaming ._content_wrap ._con_img_box ._con_img_lst4{position: absolute;top: 50%;left: 0;margin-top: -50px}
+/* service */
+#_container._service ._content_wrap._content01{padding: 0;background-image: url(../imgs/service/sub_visual3_1.jpg)}
+#_container._service ._content_wrap._content02{padding: 70px 0}
+#_container._service ._content_wrap ._content ._con_lst{margin-top: 75px}
+#_container._service ._content_wrap ._content ._con_lst > *{width: 50%}
+#_container._service ._content_wrap ._content ._con_lst ._txt_box{position: relative;min-height: 540px;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box}
+#_container._service ._content_wrap ._content ._con_lst ._txt_box ._num_box{position: absolute;top: 80px;left: -30px;width: 256px;text-align: left;color: #ddd;-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);-o-transform: rotate(-90deg);-moz-transform: rotate(-90deg);transform: rotate(-90deg)}
+#_container._service ._content_wrap ._content ._con_lst ._txt_box ._num_box em{display: block;font-size: 40px}
+#_container._service ._content_wrap ._content ._con_lst ._txt_box ._num_box span{display: block;font-size: 16px}
+#_container._service ._content_wrap ._content ._con_lst ._txt_box ._info_box{position: absolute;bottom: 60px}
+#_container._service ._content_wrap ._content ._con_lst ._txt_box ._info_box ._sub_tit,#_container._service ._content_wrap ._content ._con_lst ._txt_box ._info_box ._sub_txt{text-align: left}
+#_container._service ._content_wrap ._content ._con_lst:first-of-type{margin-top: 0}
+#_container._service ._content_wrap ._content ._con_lst:nth-of-type(2n-1) > *{float: left}
+#_container._service ._content_wrap ._content ._con_lst:nth-of-type(2n-1) > ._txt_box{padding-left: 60px}
+#_container._service ._content_wrap ._content ._con_lst:nth-of-type(2n) > *{float: right}
+#_container._service ._content_wrap ._content ._con_lst:nth-of-type(2n) > ._txt_box{padding-left: 30px}
+#_container._service ._content_wrap ._content ._con_lst:nth-of-type(2n) ._txt_box ._num_box{left: -60px}
 @keyframes waveMotion{
 	0%{-ms-transform: scale(1);-moz-transform: scale(1);-webkit-transform: scale(1);transform: scale(1); }
 	100%{ -ms-transform: scale(3);-moz-transform: scale(3);-webkit-transform: scale(3);transform: scale(3);opacity: 0 }
@@ -229,6 +248,18 @@ img{max-width: 100%}
 @-moz-keyframes waveMotion{
 	0%{-ms-transform: scale(1);-moz-transform: scale(1);-webkit-transform: scale(1);transform: scale(1); }
 	100%{ -ms-transform: scale(3);-moz-transform: scale(3);-webkit-transform: scale(3);transform: scale(3);opacity: 0 }
+}
+@keyframes waveMotion2{
+	0%{-ms-transform: scale(1);-moz-transform: scale(1);-webkit-transform: scale(1);transform: scale(1); }
+	100%{ -ms-transform: scale(2.3);-moz-transform: scale(2.3);-webkit-transform: scale(2.3);transform: scale(2.3);opacity: 0 }
+}
+@-webkit-keyframes waveMotion2{
+	0%{-ms-transform: scale(1);-moz-transform: scale(1);-webkit-transform: scale(1);transform: scale(1); }
+	100%{ -ms-transform: scale(2.3);-moz-transform: scale(2.3);-webkit-transform: scale(2.3);transform: scale(2.3);opacity: 0 }
+}
+@-moz-keyframes waveMotion2{
+	0%{-ms-transform: scale(1);-moz-transform: scale(1);-webkit-transform: scale(1);transform: scale(1); }
+	100%{ -ms-transform: scale(2.3);-moz-transform: scale(2.3);-webkit-transform: scale(2.3);transform: scale(2.3);opacity: 0 }
 }
 @keyframes rotateCloud{
 	0%{-ms-transform: rotate(0deg); -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg);transform: rotate(0deg)}
@@ -290,6 +321,21 @@ img{max-width: 100%}
 /*    platform_solution    */
     #_container._platform_g ._content_wrap._content02 ._content ._plat_lsts{padding-left: 18px}
     #_container._platform_g ._content_wrap._content02 ._content ._plat_lst ._plat_lst_txt_box strong{font-size: 22px}
+    #_container._cloud_streaming ._content_wrap._content02,#_container._cloud_streaming ._content_wrap._content03,#_container._service ._content_wrap._content02{padding: 80px 18px}
+    #_container._cloud_streaming ._content_wrap ._content,#_container._service ._content_wrap ._content{width: 100%}{width: 100%}
+    #_container._cloud_streaming ._content_wrap ._con_img_box{width: 421px;height: 421px;margin-top: -210.5px}
+    #_container._cloud_streaming ._content_wrap ._con_img_box ._con_img_lsts{width: 421px;height: 421px}
+    #_container._cloud_streaming ._content_wrap ._con_img_box ._con_img_lst{width: 80px}
+    #_container._cloud_streaming ._content_wrap ._con_img_box ._con_img_lst1,#_container._cloud_streaming ._content_wrap ._con_img_box ._con_img_lst4{margin-top: -40px}
+    #_container._cloud_streaming ._content_wrap ._con_img_box ._con_img_lst2,#_container._cloud_streaming ._content_wrap ._con_img_box ._con_img_lst3{margin-left: -40px}
+/*    service    */
+    #_container._service ._content_wrap ._content ._con_lst{position: relative}
+    #_container._service ._content_wrap ._content ._con_lst ._txt_box{position: static;min-height: 0;height: auto}
+    #_container._service ._content_wrap ._content ._con_lst ._txt_box ._num_box{top: 0;left: 47%}
+    #_container._service ._content_wrap ._content ._con_lst ._txt_box ._info_box{width: 40%;bottom: 20px}
+    #_container._service ._content_wrap ._content ._con_lst ._txt_box ._info_box ._sub_txt{line-height: 18px}
+    #_container._service ._content_wrap ._content ._con_lst ._txt_box ._info_box ._sub_txt br{display: none}
+    #_container._service ._content_wrap ._content ._con_lst ._img_box iframe{height: 350px !important}
 }
 @media only screen and (max-width:991px) {
     #_header ._gnb_wrap ._gnb_box ._gnb ._gnb_lst ._lst_tit{font-size: 22px}
@@ -319,6 +365,8 @@ img{max-width: 100%}
     #_container._platform_g ._content_wrap._content02 ._content ._plat_lst{padding-left: 130px;background-position: 0 50%;background-size: 110px auto}
     #_container._platform_g ._content_wrap._content02 ._content ._plat_lst ._plat_lst_txt_box strong{font-size: 20px}
     #_container._platform_g ._content_wrap._content02 ._content ._plat_lst ._plat_lst_txt_box p{font-size: 14px}
+    #_container._cloud_streaming ._content_wrap ._con_img_box{display: none}
+    #_container._cloud_streaming ._content_wrap ._content ._txt br{display: none}
 }
 @media only screen and (max-width:767px) {
     #_wrap ._scroll_down{width: 30px;height: 45px}
@@ -362,7 +410,6 @@ img{max-width: 100%}
     #_container ._content_wrap ._iot_hub_pord img{width: 70%}
     #_container ._content_wrap._content03 ._content ._sub_txt{font-size: 12px;margin-bottom: 35px}
     #_container ._content_wrap._content03 ._content ._txt_focus{font-size: 12px}
-    #_container._iot_stand ._content_wrap._content04{min-height: 50px}
     #_container ._content_wrap._content02{min-height: 0;padding: 65px 50px 0}
     #_container ._content_wrap._content03,#_container ._content_wrap._content05,#_container ._content_wrap._content06{padding: 40px 0}
     #_container ._content_wrap._content04 ._content ._icon_lsts_wrap ._icon_lst strong{font-size: 18px}
@@ -373,13 +420,18 @@ img{max-width: 100%}
     #_container ._content_wrap ._content ._connect_pord_wrap ._connect_prod_lst:nth-of-type(1),#_container ._content_wrap ._content ._connect_pord_wrap ._connect_prod_lst:nth-of-type(2){border-bottom: 1px solid #ddd}
     #_container ._content_wrap ._patent_lsts_wrap ._patent_lst dl dt{font-size: 15px}
     #_container ._content_wrap ._patent_lsts_wrap ._patent_lst dl dd{font-size: 12px}
-    #_container._iot_dongle ._content_wrap._content04{min-height: 520px;padding: 40px 0}
     #_container ._content_wrap._content04 ._content ._sub_txt{margin-bottom: 40px}
     #_container ._content_wrap._content04 ._content ._icon_lsts_wrap ._icon_lst{width: 50%;margin-bottom: 30px;padding-top: 100px;background-size: 80px auto}
+    #_container._iot_stand ._content_wrap._content04{min-height: 50px}
+    #_container._iot_dongle ._content_wrap._content04{min-height: 520px;padding: 40px 0}
     #_container._z_wave_repeater ._content_wrap._content03 ._content ._sub_txt{margin-bottom: 35px}
     #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box{width: 75%;height: 75%;}
+    #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box ._wave._wave1{background-repeat: no-repeat;background-position: 50% 50%;background-size: 30%}
     #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box:nth-of-type(1){top: 70%;left: 30%}
+    #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box:nth-of-type(1) ._wave._wave1{background-image: url(../imgs/iot_device/z_wave_repeater/iot_repeater3.png)}
     #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box:nth-of-type(2){top: 20%;left: 73%}
+    #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box:nth-of-type(2) ._wave._wave1{background-image: url(../imgs/iot_device/z_wave_repeater/iot_repeater4.png)}
+    #_container._z_wave_repeater ._content_wrap ._content ._iot_hub ._wave_box ._iot_hub_pord{display: none}
 /*    platform_solution    */
     #_container._platform_g ._content_wrap._content02 ._content ._sub_txt{margin-bottom: 35px}
     #_container._platform_g ._content_wrap._content02 ._content ._plat_lst{float: none;width: 300px;margin: 0 auto;margin-top: 20px;padding-left: 100px;background-size: 80px auto}
@@ -389,6 +441,14 @@ img{max-width: 100%}
     #_container._platform_g ._content_wrap._content03{min-height: 250px;padding: 0}
     #_container._platform_g ._content_wrap._content03 ._content{position: absolute;top: 50%;-webkit-transform: translateY(-50%);-ms-transform: translateY(-50%);-o-transform: translateY(-50%);-moz-transform: translateY(-50%);transform: translateY(-50%)}
     #_container._platform_g ._content_wrap._content03 ._content ._sub_txt{margin-bottom: 0}
+    #_container._cloud_streaming ._content_wrap._content02,#_container._cloud_streaming ._content_wrap._content03{padding: 40px 0}
+/*    service    */
+    #_container._service ._content_wrap ._content ._con_lst{margin-top: 50px}
+    #_container._service ._content_wrap ._content ._con_lst > *{float: none !important;width: 100%}
+    #_container._service ._content_wrap ._content ._con_lst ._img_box{margin-bottom: 20px}
+    #_container._service ._content_wrap ._content ._con_lst ._txt_box{padding: 0 !important}
+    #_container._service ._content_wrap ._content ._con_lst ._txt_box ._num_box{display: none}
+    #_container._service ._content_wrap ._content ._con_lst ._txt_box ._info_box{position: relative;bottom: inherit;width: 100%}
 }
 @media only screen and (max-width:567px){
     #_header ._gnb_wrap ._gnb_box ._gnb ._gnb_lst ._lst_tit{font-size: 18px}
@@ -409,9 +469,10 @@ img{max-width: 100%}
     #_footer ._footer_bot_wrap ._footer_bot{padding: 0;background-position: 10px 11px}
     #_footer ._footer_bot_wrap ._footer_bot adress{display: block;padding: 75px 0 20px 0;text-align: center;font-size: 12px}
     #_footer ._footer_bot_wrap ._footer_bot ._kbrain_icon_wrap{top: 10px;right: 10px}
-    /*    iot_device    */
+/*    iot_device    */
     #_container ._content_wrap._content01 ._content{padding: 0 50px}
     #_container ._content_wrap ._patent_lsts_wrap ._patent_lst{width: 90%;margin: 0 5% 20px}
+    #_container._z_wave_repeater ._content_wrap._content03 ._content ._iot_hub ._wave_box ._wave._wave1{background-size: 40%}
 /*    platform_solution    */
     #_container._platform_g ._content_wrap._content02 ._content ._plat_lst{width: auto;margin: 20px 0 0}
 }
