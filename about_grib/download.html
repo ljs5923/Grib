@@ -310,8 +310,8 @@
                     alert("이메일을 입력하세요");
                 } else if($('#company').val()==''){
                     alert("회사를 입력하세요");
-                } else if($('#text').val()==''){
-                    alert("번호를 입력하세요");
+                } else if ($checkBox.hasClass('_on')===false) {
+                    alert("개인보호정책에 동의하여 주세요");
                 } else {
                     $('._down a').addClass('_on');
                 }
