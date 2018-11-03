@@ -215,6 +215,7 @@
         jQuery(function() {
             var mapDiv1 = document.getElementById('_map1');
             var mapDiv2 = document.getElementById('_map2');
+            
             var map1 = new naver.maps.Map(mapDiv1, {
                 center: new naver.maps.LatLng(37.483866, 127.010521),
                 zoom: 11,
@@ -233,6 +234,7 @@
                     position: naver.maps.Position.TOP_RIGHT
                 }
             });
+            
             var marker1 = new naver.maps.Marker({
                 position: new naver.maps.LatLng(37.483866, 127.010521),
                 map: map1
@@ -241,7 +243,17 @@
                 position: new naver.maps.LatLng(37.366207, 127.106404),
                 map: map2
             });
+            
             map1.setOptions({ //지도 인터랙션 끄기
+                draggable: false,
+                pinchZoom: false,
+                scrollWheel: false,
+                keyboardShortcuts: false,
+                disableDoubleTapZoom: true,
+                disableDoubleClickZoom: true,
+                disableTwoFingerTapZoom: true
+            });
+            map2.setOptions({ //지도 인터랙션 끄기
                 draggable: false,
                 pinchZoom: false,
                 scrollWheel: false,
