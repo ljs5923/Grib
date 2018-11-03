@@ -528,9 +528,9 @@ img{max-width:100%}
     #_header ._gnb_wrap ._gnb_box ._gnb ._gnb_lst ._gnb_sub li a{font-size:14px}
     #_header ._sub_gnb_btn_wrap{width:60px}
     #_header ._sub_gnb_btn_wrap._active{width:230px}
-    #_header ._sub_gnb_btn_wrap._fixed._active{width: 230px}
-    #_header ._sub_gnb_btn_wrap ._sub_gnb_lsts ._sub_gnb_lst a{display:none;opacity: 0}
-    #_header ._sub_gnb_btn_wrap._active ._sub_gnb_lsts ._sub_gnb_lst a{display:block;opacity: 1}
+    #_header ._sub_gnb_btn_wrap._fixed._active{width:230px}
+    #_header ._sub_gnb_btn_wrap ._sub_gnb_lsts ._sub_gnb_lst a{display:none;opacity:0}
+    #_header ._sub_gnb_btn_wrap._active ._sub_gnb_lsts ._sub_gnb_lst a{display:block;opacity:1}
     #_container .section ._tit_box ._tit img{width:300px}
     #_container ._tit_box ._tit{font-size:44px}
     #_container ._tit_box ._txt{font-size:16px}
