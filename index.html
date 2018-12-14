@@ -239,6 +239,10 @@
             });
             //fullpage end
             //1st page video count number function start
+            var countNum = function () {
+                var slideIndex = $('.slide.active').index();
+                $('._current_num').text("0" + (slideIndex + 1));
+            }
             $("._my_video").on("ended", function() {
                 $('.fp-next').trigger('click');
                 countNum();
@@ -247,12 +251,7 @@
                 setTimeout(function() {
                     countNum();
                 }, 200);
-            });
-
-            function countNum() {
-                var slideIndex = $('.slide.active').index();
-                $('._current_num').text("0" + (slideIndex + 1));
-            }
+            });            
             //1st page video count number function end
             //scroll down btn event start
             $('#_scroll_down_wrap').on('click', function(e) {
